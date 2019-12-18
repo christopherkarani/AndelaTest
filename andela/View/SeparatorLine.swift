@@ -12,6 +12,7 @@ import UIKit
 1. Default height is 1.0
 2. Default backgroundColor is UIColor.lightGray
 */
+/// used for UI purposes, seperating the cells in a collectionview
 open class SeparatorLine: UIView {
     
     // MARK: - Properties

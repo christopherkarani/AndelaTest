@@ -18,17 +18,17 @@ class EntriesCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         collectionView.backgroundColor = .white
         setupCells()
-        retrieveData {
-            print("done")
-        }
-        // Do any additional setup after loading the view.
+        retrieveData()
     }
     
+    /// Register Custom Cells
     func setupCells() {
         collectionView.register(EntryCell.self, forCellWithReuseIdentifier: EntryCell.cellID)
     }
     
-    func retrieveData(completion: () -> Void) {
+    
+    /// used to retrieve data from the API.
+    private func retrieveData() {
         let urlString = "https://api.publicapis.org/entries"
         guard let url = URL(string: urlString) else {
             return
@@ -56,15 +56,16 @@ class EntriesCollectionViewController: UICollectionViewController {
 
 
 extension EntriesCollectionViewController: UICollectionViewDelegateFlowLayout {
+    /// number of cells to display
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return entries.count
     }
     
-    
+    /// handles cell sizing, currently has an arbitrary size
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.bounds.width, height: 300)
     }
-    
+    /// rendering of the cell
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let entry = entries[indexPath.item]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EntryCell.cellID, for: indexPath) as! EntryCell

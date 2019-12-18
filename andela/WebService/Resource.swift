@@ -8,7 +8,11 @@
 
 import Foundation
 
-/// `Resource` protocol defined how to download and cache a resource from the network
+/// Create a new Resource.
+///
+/// - Parameters:
+///   - url: the endpoint's URL
+///   - parse: this converts a response into an `A`.
 public protocol Resource {
     /// target Url
     var url: URL { get }

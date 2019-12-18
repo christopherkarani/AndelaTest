@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3C82B87423AA451F0026C179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82B87323AA451F0026C179 /* AppDelegate.swift */; };
 		3C82B87623AA451F0026C179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82B87523AA451F0026C179 /* SceneDelegate.swift */; };
-		3C82B87823AA451F0026C179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82B87723AA451F0026C179 /* ViewController.swift */; };
+		3C82B87823AA451F0026C179 /* EntriesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82B87723AA451F0026C179 /* EntriesCollectionViewController.swift */; };
 		3C82B87E23AA451F0026C179 /* andela.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C82B87C23AA451F0026C179 /* andela.xcdatamodeld */; };
 		3C82B88023AA452C0026C179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C82B87F23AA452C0026C179 /* Assets.xcassets */; };
 		3C82B88323AA452D0026C179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C82B88123AA452D0026C179 /* LaunchScreen.storyboard */; };
@@ -39,7 +39,7 @@
 		3C82B87023AA451F0026C179 /* andela.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = andela.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C82B87323AA451F0026C179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C82B87523AA451F0026C179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3C82B87723AA451F0026C179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C82B87723AA451F0026C179 /* EntriesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesCollectionViewController.swift; sourceTree = "<group>"; };
 		3C82B87D23AA451F0026C179 /* andela.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = andela.xcdatamodel; sourceTree = "<group>"; };
 		3C82B87F23AA452C0026C179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C82B88223AA452D0026C179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		3C82B89B23AA462C0026C179 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3C82B87723AA451F0026C179 /* ViewController.swift */,
+				3C82B87723AA451F0026C179 /* EntriesCollectionViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 				3C82B8A423AA5C160026C179 /* Resource.swift in Sources */,
 				3C82B87E23AA451F0026C179 /* andela.xcdatamodeld in Sources */,
 				3C82B8A023AA46AB0026C179 /* Webservice.swift in Sources */,
-				3C82B87823AA451F0026C179 /* ViewController.swift in Sources */,
+				3C82B87823AA451F0026C179 /* EntriesCollectionViewController.swift in Sources */,
 				3C82B8A223AA4BD70026C179 /* EntryCell.swift in Sources */,
 				3C82B87423AA451F0026C179 /* AppDelegate.swift in Sources */,
 				3C82B8AA23AA78D00026C179 /* SeparatorLine.swift in Sources */,
